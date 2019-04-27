@@ -1,11 +1,11 @@
 // your code here
-function showRepositories(){
+function showRepositories() {
   console.log(this.responseText);
-  let repoLIst = '<ul>';
+  let repoList = '<ul>';
   for (var i = 0; i < this.responseText.length; i++) {
-    repoLIst += '<li>' + this.responseText[i]['name'] + '</li>';
+    repoList += '<li>' + this.responseText[i]['name'] + '</li>';
   }
-  repoLIst += '</ul>';
+  repoList += '</ul>';
   document.getElementById('repositories').innerHTML = repoList;
 }
 function getRepositories() {
