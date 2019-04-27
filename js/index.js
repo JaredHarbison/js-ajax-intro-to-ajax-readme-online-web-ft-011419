@@ -26,3 +26,4 @@ function getCommits(el) {
   req.open('GET', 'https://api.github.com/repos/octocat/' + name + '/commits');
   req.send();
 }
+function 
