@@ -11,7 +11,7 @@ function showRepositories() {
         r.name + 
         '"onclick="getCommits(this)">Get Commits</a></li>'
         )
-        '</li>').join('')}</ul>`;
+        .join('')}</ul>`;
   document.getElementById('repositories').innerHTML = repoList;
 }
 function getRepositories() {
